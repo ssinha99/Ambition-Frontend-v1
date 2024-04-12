@@ -31,7 +31,7 @@ const SelectAssets: React.FC<ISelectAssets> = ({
   const isSmallerDevice = useMediaQuery(theme.breakpoints.down(376));
 
   useEffect(() => {
-    axios.get('http://localhost:3000/ambitionsDetailedData')
+    axios.get('https://ambitions-backend.onrender.com/ambitionsDetailedData')
     .then((res) => {
       setData(res.data)
     })

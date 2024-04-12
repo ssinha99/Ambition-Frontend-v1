@@ -30,7 +30,7 @@ const AmbitionDetails: React.FC<IAmbitionDetailsProps> = ({
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/ambitionsDetailedData")
+      .get("https://ambitions-backend.onrender.com/ambitionsDetailedData")
       .then((res) => {
         setGoalDetailsData(res.data);
       })

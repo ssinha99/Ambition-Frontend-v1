@@ -45,7 +45,7 @@ const AddAmbition = () => {
     };
     setIsFetching(true);
     axios
-      .post("http://localhost:3000/addAmbition", payload)
+      .post("https://ambitions-backend.onrender.com/addAmbition", payload)
       .then(() => {
         navigate("/");
         setIsFetching(false);
